@@ -46,6 +46,10 @@ cloche {
     fabric {
         loaderVersion = "0.16.10"
 
+        metadata {
+            entrypoint("main", "org.example.fabric.FabricExampleMod::initialize")
+        }
+
         data()
         client()
 

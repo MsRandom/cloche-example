@@ -1,6 +1,4 @@
-# cloche-example
-## A functional example of a basic multiplatform cloche project
-
+## cloche-example - A functional example of a basic multiplatform cloche project
 To add mixins or access wideners, simply put them anywhere in the project(not in resources), and add them as follows:
 ```kotlin
 accessWideners.from(file("name.accessWidener"))
