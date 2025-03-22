@@ -1,14 +1,12 @@
 plugins {
-    id("earth.terrarium.cloche") version "0.8.20"
+    id("earth.terrarium.cloche") version "0.8.22"
 }
 
 group = "org.example"
 version = "1.0.0"
 
 repositories {
-    cloche {
-        librariesMinecraft()
-    }
+    cloche.librariesMinecraft()
 
     mavenCentral()
 
