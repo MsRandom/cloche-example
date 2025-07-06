@@ -1,9 +1,6 @@
 plugins {
-    id("earth.terrarium.cloche") version "0.8.22"
+    id("earth.terrarium.cloche") version "0.10.21"
 }
-
-group = "org.example"
-version = "1.0.0"
 
 repositories {
     cloche.librariesMinecraft()
@@ -14,6 +11,7 @@ repositories {
         main()
 
         mavenFabric()
+        mavenNeoforgedMeta()
         mavenNeoforged()
     }
 }
@@ -36,7 +34,6 @@ cloche {
         runs {
             server()
             client()
-
             data()
         }
     }
@@ -52,7 +49,7 @@ cloche {
         client()
 
         dependencies {
-            fabricApi("0.115.2+1.21.1")
+            fabricApi("0.115.2")
         }
 
         runs {
